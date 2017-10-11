@@ -34,7 +34,7 @@ views = pyfusion.PyViews(depthmaps, Ks,Rs,Ts)
 tsdf = pyfusion.tsdf_gpu(views, depth,height,width, vx_size, truncation, False)
 
 # the same code can also be run on the CPU
-tsdf = pyfusion.tsdf_gpu(views, depth,height,width, vx_size, truncation, False, n_threads=8)
+tsdf = pyfusion.tsdf_cpu(views, depth,height,width, vx_size, truncation, False, n_threads=8)
 ```
 
 Make sure `pyfusion` is in your `$PYTHONPATH`.
