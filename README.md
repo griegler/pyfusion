@@ -13,7 +13,7 @@ make
 Afterwards you can compile the Cython code via
 
 ```bash
-python setup.py build-ext --inplace
+python setup.py build_ext --inplace
 ```
 
 You can then use the fusion functions
